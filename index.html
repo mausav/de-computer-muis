@@ -4,9 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>De Computer Muis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Welkom bij De Computer Muis!</h1>
-  <p>Hulp bij al je computerproblemen.</p>
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-700">De Computer Muis</h1>
+      <ul class="flex gap-4 text-sm font-medium">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">Over ons</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Diensten</a></li>
+        <li><a href="#products" class="hover:text-blue-600">Producten</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-100 text-center py-16">
+    <h2 class="text-3xl font-bold mb-4">Hulp met je computer, door De Computer Muis 🖱️</h2>
+    <p class="text-lg max-w-xl mx-auto">Particulier of zakelijk? Wij lossen jouw computerproblemen snel en vriendelijk op.</p>
+  </section>
+
+  <!-- Over Ons -->
+  <section id="about" class="py-16 px-4 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Over De Computer Muis</h2>
+    <p>Wij zijn een kleinschalig bedrijf met een persoonlijke aanpak. "De Computer Muis" is er voor iedereen die hulp nodig heeft met computers: van installatie tot advies, van reparatie tot aanschafbegeleiding. Ook bedrijven kunnen op ons rekenen voor betrouwbare IT-ondersteuning.</p>
+  </section>
+
+  <!-- Diensten -->
+  <section id="services" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Onze Diensten</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-bold text-lg mb-2">Voor Particulieren</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Computer opschonen en versnellen</li>
+            <li>Virusverwijdering</li>
+            <li>Hulp bij e-mail, printers, wifi</li>
+            <li>Aankoopadvies & installatie</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-bold text-lg mb-2">Voor Bedrijven</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Netwerk- en systeembeheer</li>
+            <li>Bedrijfsnetwerken beveiligen</li>
+            <li>Cloud-oplossingen en dataherstel</li>
+            <li>IT-advies en consultancy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Producten -->
+  <section id="products" class="py-16 px-4 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6">Onze Producten</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-bold text-lg mb-2">Laptops</h3>
+        <p class="text-sm">Wij bieden laptops van diverse merken, geschikt voor thuisgebruik, werk of gaming.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-bold text-lg mb-2">PC's</h3>
+        <p class="text-sm">Op maat gemaakte computers, perfect voor zakelijke toepassingen of gaming.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-bold text-lg mb-2">Accessoires</h3>
+        <p class="text-sm">Van muizen en toetsenborden tot externe harde schijven en webcams.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-blue-100 py-16 px-4">
+    <h2 class="text-2xl font-bold mb-6">Neem contact met ons op</h2>
+    <p class="mb-4">Heb je vragen of wil je een afspraak maken? Vul het onderstaande formulier in en we nemen snel contact met je op.</p>
+    <form action="#" method="POST" class="space-y-4 max-w-xl mx-auto">
+      <input type="text" name="name" placeholder="Naam" class="w-full p-3 rounded border border-gray-300" required />
+      <input type="email" name="email" placeholder="E-mail" class="w-full p-3 rounded border border-gray-300" required />
+      <textarea name="message" placeholder="Bericht" class="w-full p-3 rounded border border-gray-300" rows="4" required></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded">Verstuur bericht</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 De Computer Muis | Alle rechten voorbehouden.</p>
+  </footer>
+
 </body>
 </html>
